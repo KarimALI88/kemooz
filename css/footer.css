@@ -11,6 +11,7 @@
   .footer {
       background-color: #000000;
       color: #fff;
+      
   }
   .footer-wave-svg {
       background-color: transparent;
@@ -139,6 +140,7 @@
       position: absolute;
       right: 0;
       width: 236px;
+      font-family: "Font Awesome 5 Free" !important;
   }
   
   .footer-social-amoeba-svg {
