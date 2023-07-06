@@ -1,78 +1,45 @@
-.col-sm-4 {
-    position: relative;
-    perspective: 1000px; /*add a perspective to the parent container */
-    text-align: center;
-    margin-bottom: 150px;
-    z-index: 4;
-  }
-
-  .col-sm-4 .img{
-    width: 100%;
-    height: 100%;
-   
-  }
-  
-  .img img{
-    width: 90%;
-    height: 90%;
-    margin: auto !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 150px;
-  }
-  img:hover{
-    cursor: pointer;
-  }
-
-.expcontainer{
-  text-align: center !important;
+.one_exp{
+  background-color: rgb(22, 19, 19);
+  color: white;
+  padding: 0px 50px 10px;
+  margin-bottom: 30px;
+  max-width: 350px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-  .expdesc {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: fit-content;
-    background-color: white;
-    padding: 30px 0 !important;
-    backface-visibility: hidden; /* hide the backface of the card */
-    transform: rotateY(180deg); /* rotate the card 180 degrees initially to hide content */
-    transition: transform 0.5s ease-in-out; /* add a transition effect */
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+.one_exp .img{
+  text-align: center;
+}
 
-  }
-  
-  .col-sm-4:hover .expdesc {
-    transform: rotateY(0deg); /* rotate the card back to its original position on hover */
-  }
-  
-  .expdesc h1, .expdesc p {
-    opacity: 0; /* initially hide the title and description */
-    transition: opacity 0.5s ease-in-out; /* add a transition effect */
-  }
-  
-  .col-sm-4:hover .expdesc h1,
-  .col-sm-4:hover .expdesc p {
-    opacity: 1; /* show the title and description on hover */
-  }
-  
+.one_exp img{
+  width: 80%;
+  margin: 20px auto !important;
+  height: 250px;
+}
 
-  .expdesc h1{
-    color: rgba(78, 161, 75, 0.84);
-    line-height: 1.7;
-    padding: 10px 5px;
-  }
+.exp_title{
+  text-align: center;
+  color: rgba(78, 161, 75, 0.84);
+}
 
-  .expdesc p{
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 1.6;
-    padding: 10px;
-  }
+.exp_details{
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
 
-  .links{
-    border-radius: 50%;
-    margin-top: 20px;
+.links_card{
+  margin-left: 1% !important;
+}
+
+.links_card img{
+  border-radius: 50%;
+}
+@media (max-width:1000px) {
+  .links_card{
+    margin-left: auto !important;
+    margin-left: auto !important;
   }
+}
