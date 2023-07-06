@@ -20,6 +20,10 @@
     box-shadow: rgba(42, 42, 46, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+.proj_img .reverse-img{
+    transform: skew(0.55turn, -10deg) scale(1.1);
+}
+
 @media (max-width:1000px) {
     .proj_img img{
         width: 70%;
@@ -27,6 +31,10 @@
         transform: skew(-0.55turn, 10deg) scale(1.03);
         margin-top: 30px !important;
         margin-bottom: 30px !important;
+    }
+
+    .proj_img .reverse-img{
+        transform: skew(0.55turn, -10deg) scale(1.03);
     }
 }
 
