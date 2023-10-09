@@ -1,0 +1,111 @@
+
+
+.who{
+    margin: 100px auto;
+    text-align: center;
+}
+
+.whotitle{
+    margin-bottom: 150px;
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Young Serif', serif;
+}
+
+.whotitle span,.skillstitle span,.projecttitle span{
+    color: #ff9f10;
+
+}
+
+.whocontent{
+    text-align: left;
+    margin: 80px auto;
+}
+
+.middlecontent, .rightcontent, .leftcontent{
+    margin-bottom: 50px;
+}
+
+.leftcontent h1 , .rightcontent h1{
+    color: #ff9f10;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.leftcontent p , .rightcontent p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.middlecontent img{
+    width: 100% !important;
+}
+
+
+.cv{
+    padding: 10px 30px;
+    background-color: #ff9f10;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.cv a{
+    text-decoration: none;
+    color: black;
+}
+
+.cv:hover{
+    box-shadow:   #ff9f1098 3px 3px 6px;
+}
+
+
+/* work with me */
+
+.why-work{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #ff9f10;
+    height: 50px;
+    z-index: 10 !important;
+    overflow: hidden;
+    padding: 10px;
+    font-weight: bold !important;
+    transition: 0.2s;
+    border: 2px solid rgb(4, 42, 212) ;
+}
+
+
+.why-work:hover{
+    border: 2px solid white ;
+    padding: 12px;
+}
+
+
+.modal-content{
+    background-color: black !important;
+    box-shadow:   #ff9f1098 3px 3px 6px;
+
+}
+
+.modal-title{
+    color: #ff9f10 !important;
+}
+
+.modal-body ul{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.modal-body li{
+    margin-bottom: 20px;
+}

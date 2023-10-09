@@ -1,0 +1,21 @@
+header{
+    background: url(../imgs/welcome.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 130vh;
+    width: 100%;
+    margin-top: 50px !important;
+}
+
+@media (max-width:800px) {
+    header{
+        background: url(../imgs/welcomephone.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        margin-top: 80px !important;
+    }
+}

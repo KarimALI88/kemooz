@@ -1,0 +1,15 @@
+.fade-in-section {
+    opacity: 0.5;
+    transform: translateX(-80px);
+    transition: opacity 0.5s, transform 0.7s;
+  }
+  
+  .fade-in-section.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500 !important;
+  }

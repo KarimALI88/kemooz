@@ -1,0 +1,46 @@
+.certificates{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cert-title{
+    margin-bottom: 150px;
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Young Serif', serif;
+}
+
+@media (max-width:1000px) {
+    .cert-title{
+        margin-bottom: 150px;
+        font-size: 50px !important;
+    }
+}
+.cert-title span{
+    color: #ff9f10;
+}
+
+.certificate{
+    max-width: 320px;
+    margin: 100px auto !important;
+}
+
+.certificate img{
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    transition-duration: 1s;
+}
+
+.pos-rotate{
+    rotate: 20deg;
+}
+
+.neg-rotate{
+    rotate: -20deg;
+}
+
+.certificate img:hover{
+    scale: 1.3;
+}
