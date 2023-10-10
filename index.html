@@ -42,8 +42,11 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img class="logo" src="./imgs/KEMOOZ.gif" alt="logo"></a>
-          <button class="navbar-toggler nav-togg" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <!-- <button class="navbar-toggler nav-togg" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-arrow-up"></i> <i class="fa-solid fa-arrow-down"></i>
+          </button> -->
+          <button id="toggleButton" class="navbar-toggler nav-togg" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i id="toggleIcon" class="fa-solid fa-arrow-down"></i>
           </button>
           <div class="collapse navbar-collapse links" id="navbarNav">
             <ul class="navbar-nav">
@@ -89,7 +92,9 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Why Hiring me ?</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" style="color: white !important; padding:15px !important; background-color:#ff9f10 !important;" data-bs-dismiss="modal" aria-label="Close">
+              <!-- <i class="fa-solid fa-x" style="color: white !important;"></i> -->
+            </button>
           </div>
           <div class="modal-body">
             <ul>
@@ -103,7 +108,7 @@
       </div>
     </div>
     <!-- end why work with me -->
-
+    <!-- ====================================================================================== -->
 
     <!-- who I am -->
     <section class="who  ">
@@ -391,7 +396,27 @@
 
     <!-- bootstrap -->
     <script src="./BootStrap/bootJs/bootstrap.min.js"></script>
-    <script src="./js/fadein.js"></script>
+    <script>
+      // Function to toggle the text and icon of the button
+      function toggleButton() {
+        var button = document.getElementById("toggleButton");
+        var icon = document.getElementById("toggleIcon");
+    
+        if (button.getAttribute("aria-expanded") === "true") {
+          button.setAttribute("aria-expanded", "false");
+          icon.classList.remove("fa-arrow-down");
+          icon.classList.add("fa-arrow-up");
+        } else {
+          button.setAttribute("aria-expanded", "true");
+          icon.classList.remove("fa-arrow-up");
+          icon.classList.add("fa-arrow-down");
+        }
+      }
+    
+      // Attach the click event listener to the button
+      var button = document.getElementById("toggleButton");
+      button.addEventListener("click", toggleButton);
+    </script>    
     <!-- end bootstrap -->
 </body>
 </html>
