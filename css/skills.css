@@ -1,9 +1,8 @@
 .skills{
-    margin: 100px auto;
+    padding: 100px 0;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 100px;
 }
 
 .skillstitle{
@@ -12,26 +11,36 @@
     font-weight: bold;
     font-style: italic;
     font-family: 'Young Serif', serif;
+    text-align: center;
 }
 
 @media (max-width:1000px) {
     .skillstitle{
-        margin-bottom: 150px;
-        font-size: 70px !important;
+        margin-bottom: 60px;
+        font-size: 40px !important;
+        text-align: center;
     }
 }
 
-
-
 .skill{
-    max-width: 300px !important;
+    max-width: 30% !important;
     margin: 30px auto !important;
-    background-color: #ff9f10;
-    padding: 10px 20px;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: #ff9f10a2 3px 3px 3px;
     text-align: left;
-    font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-width:1000px) {
+    .skill{
+        max-width: 90% !important;
+    }
+}
+
+.skill h2{
+    width: 100% !important;
+    border-radius: 10px;
+    background-color: #ff9f10;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: rgb(38, 57, 77) 0px 12px 20px -10px;
 }
