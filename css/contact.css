@@ -16,8 +16,8 @@
 
 @media (max-width:1000px) {
     .contacts-title{
-        margin-bottom: 150px;
-        font-size: 70px !important;
+        margin-bottom: 60px;
+        font-size: 40px !important;
     }
 }
 
@@ -29,7 +29,7 @@
 
 .conn i{
     color: #ff9f10;
-    font-size: 70px !important;
+    font-size: 50px !important;
     font-weight: bold;
     margin-bottom: 30px;
     animation-name: rotation;
@@ -40,13 +40,18 @@
 
 @keyframes rotation {
     from {
-        rotate: 0deg;
+        -webkit-transform: rotate(0deg); /* Safari, older versions of Chrome */
+        -ms-transform: rotate(0deg); /* Internet Explorer */
+        transform: rotate(0deg); /* Standard */
     }
     to {
-        rotate: 360deg;
+        -webkit-transform: rotate(360deg); /* Safari, older versions of Chrome */
+        -ms-transform: rotate(360deg); /* Internet Explorer */
+        transform: rotate(360deg); /* Standard */
     }
 }
 
 .contact h2{
     font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
 }
